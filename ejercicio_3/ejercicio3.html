@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    
+    <h1>Cifrado César</h1>
+
+    <h2>- Descifrar -</h2>
+
+    <!-- Formulario simple que recoge los datos del texto que quieras descifrar -->
+    <form action="">
+
+        <label for="alfabeto">Alfabeto</label>
+        <select name="alfabeto" id="alfabeto">
+            <option value="0">Castellano</option>
+            <option value="1">Inglés</option>
+        </select>
+        <br>
+        <label for="texto">Texto a descifrar</label>
+        <textarea name="texto" id="texto"></textarea>
+        <br>
+        <label for="nivel">Nivel de rotado</label>
+        <input type="number" min="0" max="10" id="nivel" name="nivel">
+        <br>
+        <button id="boton" type="button">Descifrar</button>
+
+
+    </form>
+
+    <p style="color: red;" id="resultado"></p>
+
+    <script src="cesar.js"></script> <!-- llamada al scrip donde se almacena toda la lógica del método césar -->
+
+</body>
+</html>
